@@ -1,0 +1,14 @@
+#creando modulos de golang
+    go mod init main.go
+    go mod tidy
+
+#descargar dependencias de go
+    go get github.com/labstack/echo/v4
+    go get github.com/labstack/echo/v4/middleware
+    go get github.com/labstack/echo/v4/middleware@v4.9.1
+
+#construir la imagen de docker
+    docker build --tag hellow_go .     
+
+#ejecutar la imagen de docker 
+    docker run -p 8080:8080 hellow_go   
